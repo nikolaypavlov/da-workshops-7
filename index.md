@@ -143,7 +143,7 @@ Characterize data sets and statistics that are always positive and typically rig
 
 
 ```r
-curve(dchisq(x, df=2), 0, 30, n = 1000, lwd=2)
+curve(dchisq(x, df=2), 0, 30, n = 1000, lwd=2, ylab = "Density", xlab="Chi-square statistics")
 curve(dchisq(x, df=5), 0, 30, n = 1000, add=T, lty=2, lwd=2)
 curve(dchisq(x, df=10), 0, 30, n = 1000, add=T, lty=3, lwd=2)
 legend("topright", c("df=2", "df=5", "df=15"), lty=c(1,2,3))

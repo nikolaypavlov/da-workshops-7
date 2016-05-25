@@ -251,7 +251,7 @@
   <article data-timings="">
     <p>Characterize data sets and statistics that are always positive and typically right skewed</p>
 
-<pre><code class="r">curve(dchisq(x, df=2), 0, 30, n = 1000, lwd=2)
+<pre><code class="r">curve(dchisq(x, df=2), 0, 30, n = 1000, lwd=2, ylab = &quot;Density&quot;, xlab=&quot;Chi-square statistics&quot;)
 curve(dchisq(x, df=5), 0, 30, n = 1000, add=T, lty=2, lwd=2)
 curve(dchisq(x, df=10), 0, 30, n = 1000, add=T, lty=3, lwd=2)
 legend(&quot;topright&quot;, c(&quot;df=2&quot;, &quot;df=5&quot;, &quot;df=15&quot;), lty=c(1,2,3))
